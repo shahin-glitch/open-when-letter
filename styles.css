@@ -263,4 +263,17 @@ a {
 
     font-size: 13px;
   }
+
+  /*New One*/
+  
+}
+
+.main-container {
+    position: relative;
+}
+
+.view-authority {
+    position: absolute;
+    bottom: -40px;
+    right: 30px;
 }
