@@ -105,3 +105,162 @@ a {
 }
 
 
+/* Letter Page */
+.letter-container {
+    position: relative;
+    width: 700px;
+    max-width: 90vw;
+    margin-top: 30px;
+}
+
+.opening-gif {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.letter-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+
+    width: 55%;
+
+    text-align: center;
+    opacity: 1;
+    transition: opacity 1.5s ease;
+}
+
+.letter-text.hidden {
+    opacity: 0;
+}
+
+.letter-text h1 {
+    margin: 0 0 20px;
+    font-size: 24px;
+    font-weight: normal;
+}
+
+.letter-text p {
+    margin: 0;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.back-link {
+    margin-top: 30px;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.back-link:hover{
+    text-decoration: underline;
+}
+
+/* mobile version */
+@media (max-width: 600px) {
+
+  body {
+    padding: 20px 0;
+  }
+
+
+  /* HOME */
+
+  .home {
+    width: 90vw;
+
+    height: 80vh;
+
+    padding: 40px 15px;
+
+    border-radius: 25px;
+
+    overflow-y: auto;
+
+    /* Hide scrollbar */
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+
+  .home::-webkit-scrollbar {
+    display: none;
+  }
+
+  .home h1 {
+    font-size: 42px;
+  }
+
+  .home > p {
+    margin-bottom: 30px;
+  }
+
+
+  /* ENVELOPES */
+
+  .envelope-grid {
+    width: 100%;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 30px 0;
+
+    justify-items: center;
+  }
+
+  .envelope {
+    width: 150px;
+
+    justify-self: center;
+  }
+
+  .envelope img {
+    width: 150px;
+    height: 115px;
+  }
+
+  .envelope p {
+    margin-top: 8px;
+
+    font-size: 14px;
+  }
+
+
+  /* LETTER */
+
+  .letter-page {
+    padding: 30px 15px;
+  }
+
+  .letter-container {
+    width: 95vw;
+
+    margin-top: 20px;
+  }
+
+  .letter-text {
+    width: 55%;
+  }
+
+  .letter-text h1 {
+    margin-bottom: 12px;
+
+    font-size: 18px;
+  }
+
+  .letter-text p {
+    font-size: 12px;
+    line-height: 1.5;
+  }
+
+
+  /* BACK LINK */
+
+  .back-link {
+    margin-top: 20px;
+
+    font-size: 13px;
+  }
+}
