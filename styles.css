@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Monsieur+La+Doulaise&family=Special+Elite&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+
+    background-image: url("images/bg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    color: #4a3030;
+    font-family: "Special Elite", monospace;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+a {
+    color: inherit;
+}
+
+/* Home Page */
+
+.home {
+    width: 850px;
+    max-width: 90vw;
+
+    height: 780px;
+    max-height: 90vh;
+
+    background: rgba(255, 241, 243, 0.94);
+
+    border-radius: 35px;
+    padding: 60px 70px;
+
+    overflow-y: auto;
+
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.home::-webkit-scrollbar {
+    display: none;
+}
+
+.home h1 {
+    margin: 0 0 10px;
+    font-family: "Monsieur La Doulaise", cursive;
+    font-size: 60px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.home > p {
+    margin: 0 0 45px;
+    text-align: center;
+}
+
+/* Envelope Grid */
+
+.envelope-grid {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 45px 60px;
+    width: 650px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.envelope {
+    width: 260px;
+    justify-self: center;
+    text-align: center;
+    text-decoration: none;
+    transition: transform 0.2s ease;
+}
+
+.envelope img {
+    display: block;
+
+    width: 250px;
+    height: 185px;
+    margin: 0 auto;
+
+    object-fit: contain;
+}
+
+.envelope p {
+    margin: 12px 0 0;
+    font-size: 17px;
+    line-height: 1.4;
+}
+
+.envelope:hover {
+    transform: translateY(-6px);
+}
+
+
